@@ -42,7 +42,7 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 1fr;
+  grid-template-columns: 711px 399px;
   justify-content: space-between;
   align-items: end;
   gap: 30px;
@@ -60,6 +60,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center
 }
 
 .search-form {
@@ -122,7 +123,8 @@ fieldset {
 }
 
 button {
-  height: 34px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: #fff solid 1px;
   color: #fff;
   font-family: Fira Sans Condensed, sans-serif;
@@ -154,7 +156,7 @@ button {
 .content__list {
   position: relative;
   height: 300px;
-  padding: 0 2px 2px;
+  padding: 2px;
   overflow-y: auto;
 }
 
@@ -172,6 +174,7 @@ button {
 .content__video-card-description-container {
   flex-grow: 1;
   padding-bottom: 2px;
+  max-width: 200px;
 }
 
 .content__card-link {
@@ -198,6 +201,9 @@ button {
 
 .content__video-card-description {
   line-height: 0.9;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
@@ -265,6 +271,7 @@ button {
 .search-form__label:has(:focus-visible) {
   outline: solid 1px #fff;
   outline-offset: 1px;
+  padding-bottom: 2px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
