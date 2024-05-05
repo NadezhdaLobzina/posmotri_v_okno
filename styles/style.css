@@ -168,13 +168,13 @@ button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 0;
   padding: 2px;
 }
 
 .content__video-card-description-container {
   flex-grow: 1;
   padding-bottom: 2px;
-  max-width: 200px;
 }
 
 .content__card-link {
@@ -188,7 +188,8 @@ button {
 }
 
 .content__video-card-title {
-  padding: 2px 0 6px 2px;
+  width: 200px;
+  padding-bottom: 6px;
   overflow: hidden;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -200,6 +201,7 @@ button {
 }
 
 .content__video-card-description {
+  width: 200px;
   line-height: 0.9;
   text-overflow: ellipsis;
   white-space: nowrap;
